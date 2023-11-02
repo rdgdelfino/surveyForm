@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,300;1,400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<div class="bg"></div>
+
+    <div id="header">
+        <h1 id="title">freeCodeCamp Survey Form</h1>
+        <p id="description">Obrigado por nos ajudar a melhorar a plataforma</p>
+    </div>
+
+
+        <form action="" id="survey-form">
+            <div class="inputContainer">
+                <label for="" id="name-label" for="name">Nome</label>
+                <input type="text" name="" id="name" required placeholder="Preencha com seu nome">
+            </div>
+            <div class="inputContainer">
+                <label for="" id="email-label" for="email">E-mail</label>
+                <input type="email" name="" id="email" required placeholder="Preencha com seu email"
+                    pattern="/^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/">
+            </div>
+            <div class="inputContainer">
+                <label for="" id="number-label" for="number">Idade(Opcional)</label>
+                <input type="number" name="" id="number" min="10" max="99" placeholder="Preencha com sua idade">
+            </div>
+            <div class="inputContainer">
+                <label for="dropdown">Qual opção melhor descreve sua ocupação atual?</label>
+                <select name="" id="dropdown">
+                    <option value="0" disabled selected>Selecione uma opção</option>
+                    <option value="1">Estudante</option>
+                    <option value="2">Trabalho de tempo integral</option>
+                    <option value="3">Prefiro não dizer</option>
+                    <option value="4">Outro</option>
+                </select>
+            </div>
+            <div>
+                <p class="pLabel">Você recomendaria freeCodeCamp para um amigo?</p>
+                <div class="optGroup">
+                    <input type="radio" name="selRecommmend" id="sure" value="sure" checked>
+                    <label for="sure">Sim</label>
+                </div>
+                <div class="optGroup">
+                    <input type="radio" name="selRecommmend" id="maybe" value="maybe">
+                    <label for="maybe">Talvez</label>
+                </div>
+                <div class="optGroup">
+                    <input type="radio" name="selRecommmend" id="no" value="no">
+                    <label for="no">Não</label>
+                </div>
+            </div>
+    
+            <div>
+                <p class="pLabel">O que você gostaria que fosse melhorado?</p>
+                <div class="optGroup">
+                    <input type="checkbox" name="" id="front" value="front">
+                    <label for="front">Projetos Front-End</label>
+                </div>
+                <div class="optGroup">
+                    <input type="checkbox" name="" id="back" value="back">
+                    <label for="BACK">Projetos Back-End</label>
+                </div>
+                <div class="optGroup">
+                    <input type="checkbox" name="" id="dataViz" value="dataViz">
+                    <label for="dataViz">Visualização de Dados</label>
+                </div>
+                <div class="optGroup">
+                    <input type="checkbox" name="" id="challenges" value="challenges">
+                    <label for="challenges">Desafios</label>
+                </div>
+                <div class="optGroup">
+                    <input type="checkbox" name="" id="openSource" value="openSource">
+                    <label for="openSource">Open Source Community</label>
+                </div>
+                <div class="optGroup">
+                    <input type="checkbox" name="" id="gitter" value="gitter">
+                    <label for="openSource">Gitter Help Rooms</label>
+                </div>
+                <div class="optGroup">
+                    <input type="checkbox" name="" id="videos" value="videos">
+                    <label for="openSource">Vídeos</label>
+                </div>
+                <div class="optGroup">
+                    <input type="checkbox" name="" id="encontros" value="encontros">
+                    <label for="openSource">Encontros</label>
+                </div>
+            </div>
+    
+            <div id="txtAreaContainer">
+                <label for="txtArea">Deixe sua avaliação</label>
+                <textarea name="txtArea" id="txtArea" cols="30" rows="5" placeholder="Escreva aqui"></textarea>
+            </div>
+    
+            <input type="submit" value="Submit" id="submit">
+        </form>
+
+</body>
+
+</html>

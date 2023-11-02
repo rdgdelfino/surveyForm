@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+
+    --bgColor: #151b30ea;
+    --colorWhite: rgb(243, 243, 243);
+    --submitColor: #fbe8a6;
+    --fontForm: 'Roboto', sans-serif
+}
+
+body {
+    font-family: var(--fontForm);
+    color: var(--colorWhite);
+
+}
+
+
+body:after {
+    content: "";
+    position: fixed;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: url('https://source.unsplash.com/QckxruozjRg')#303c6cb7;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply
+}
+
+
+#title,
+#description {
+    text-align: center;
+}
+
+#title {
+    font-size: 3.2vw;
+    font-weight: 400;
+}
+
+#description {
+    font-size: 2vw;
+    font-style: italic;
+    font-weight: 300;
+}
+
+
+#header {
+    margin: 5vw auto;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    font-size: 1.35rem;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 3.2vw;
+    padding: 4.5%;
+    height: auto;
+    width: 70%;
+    margin: 5vw auto 0;
+    background-color: var(--bgColor);
+    border-radius: 5px;
+    font-size: 2vw;
+
+}
+
+label {
+    margin-bottom: 0.5rem;
+
+}
+
+.pLabel {
+    margin-bottom: 1.8vw;
+
+}
+
+div.inputContainer {
+    display: flex;
+    flex-direction: column;
+
+}
+
+#name,
+#number,
+#email,
+select {
+    height: 4vw;
+    border: 0;
+    padding-left: 10px;
+    border-radius: 0.5vw;
+    font-size: 1.8vw
+}
+
+input[type='radio'],
+input[type='checkbox'] {
+    width: 2vw;
+    height: 2vw;
+
+}
+
+.optGroup {
+    display: flex;
+    gap: 1vw;
+    height: 5vw;
+    align-items: bottom;
+}
+
+#txtArea {
+    border: 0;
+    padding-top: 10px;
+    padding-left: 10px;
+    border-radius: 0.5vw;
+    font-size: 1.8vw;
+    font-family: var(--fontForm);
+}
+
+#txtAreaContainer {
+
+    display: flex;
+    flex-direction: column;
+}
+
+#submit {
+    height: 4vw;
+    border: 0;
+    background-color: var(--submitColor);
+    font-family: var(--fontForm);
+    font-size: 1.8vw;
+    color: rgb(46, 49, 46);
+    font-weight: 400;
+}
+
+
+
+
+@media (min-width: 992px) {
+
+
+    #title,
+    #description {
+        text-align: center;
+    }
+
+    #title {
+        font-size: 2rem;
+        font-weight: 400;
+    }
+
+    #description {
+        font-size: 1.2rem;
+        font-style: italic;
+        font-weight: 300;
+    }
+
+    #header {
+        margin: 50px auto 0;
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        font-size: 2.2vw;
+    }
+
+
+    form {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-between; */
+        gap: 2rem;
+        padding: 2.7rem;
+        height: auto;
+        width: 700px;
+        margin: 50px auto 0;
+        background-color: var(--bgColor);
+        border-radius: 5px;
+        font-size: 1.2rem;
+    }
+
+    label {
+        margin-bottom: 0.5rem;
+
+    }
+
+    .pLabel {
+        margin-bottom: 1rem;
+
+    }
+
+    div.inputContainer {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    #name,
+    #number,
+    #email,
+    select {
+        height: 35px;
+        border: 0;
+        padding-left: 10px;
+        border-radius: 5px;
+        font-size: 1rem
+    }
+
+    input[type='radio'],
+    input[type='checkbox'] {
+        width: 1.2rem;
+        height: 1.2rem;
+
+    }
+
+    .optGroup {
+        display: flex;
+        height: auto;
+        gap: 0.6rem;
+        align-items: bottom;
+    }
+
+    #txtArea {
+        border: 0;
+        padding-top: 10px;
+        padding-left: 10px;
+        border-radius: 5px;
+        font-size: 1rem;
+        font-family: var(--fontForm);
+    }
+
+    #txtAreaContainer {
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    #submit {
+        height: 2.5rem;
+        border: 0;
+        background-color: var(--submitColor);
+        font-family: var(--fontForm);
+        font-size: 1rem;
+        color: rgb(46, 49, 46);
+        font-weight: 400;
+    }
+
+}
